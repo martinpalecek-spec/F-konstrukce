@@ -563,8 +563,26 @@
         form textarea { height: 130px; resize: none; margin-bottom: 24px; }
         form button { width: 100%; justify-content: center; border: none; cursor: pointer; }
 
-        /* Patička */
-        footer { text-align: center; padding: 40px 24px; color: var(--text-muted); font-size: 14px; border-top: 1px solid #e2e8f0; }
+        /* Patička s autorským odkazem */
+        footer { 
+            text-align: center; 
+            padding: 40px 24px; 
+            color: var(--text-muted); 
+            font-size: 14px; 
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .footer-credits {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+        .footer-separator {
+            color: #cbd5e1;
+        }
 
         /* Responzivita */
         @media (max-width: 992px) {
@@ -578,6 +596,8 @@
             nav ul { gap: 20px; }
             .hero-content h1 { font-size: 40px; }
             .hero-cad-viewport { height: 320px; }
+            footer { flex-direction: column; gap: 6px; }
+            .footer-separator { display: none; }
         }
     </style>
 </head>
@@ -641,7 +661,7 @@
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-calculator"></i></div>
                 <h3>Statika staveb</h3>
-                <p>Odborné statické výpočty, posudky and bezpečné dimenzování nosných konstrukcí.</p>
+                <p>Odborné statické výpočty, posudky a bezpečné dimenzování nosných konstrukcí.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-file-invoice"></i></div>
@@ -765,7 +785,9 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 F konstrukce. Všechna práva vyhrazena.</p>
+        <span>&copy; 2026 F konstrukce. Všechna práva vyhrazena.</span>
+        <span class="footer-separator">|</span>
+        <span class="footer-credits">Vytvořil Martin Paleček</span>
     </footer>
 
 </body>
