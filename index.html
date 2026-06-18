@@ -765,7 +765,7 @@
                     <i class="fa-solid fa-envelope"></i>
                     <div>
                         <p style="color: var(--text-muted); font-size: 13px;">E-mail</p>
-                        <p><a href="mailto:tvuj@email.cz">tvuj@email.cz</a></p>
+                        <p><a href="mailto:f.konstrukce@email.cz">f.konstrukce@email.cz</a></p>
                     </div>
                 </div>
 
@@ -779,13 +779,16 @@
             </div>
             
             <div class="contact-form">
-                <form action="#" method="POST">
+                <form action="https://formspree.io/f/xeewwypg" method="POST">
                     <div class="form-group">
-                        <input type="text" name="jmeno" placeholder="Jméno a příjmení" required>
+                        <input type="text" name="Jméno a příjmení" placeholder="Jméno a příjmení" required>
                         <input type="email" name="email" placeholder="E-mailová adresa" required>
                     </div>
-                    <input type="tel" name="telefon" placeholder="Telefonní číslo (nepovinné)" style="margin-bottom: 20px;">
-                    <textarea name="zprava" placeholder="Popište stručně váš záměr..." required></textarea>
+                    <input type="tel" name="Telefon" placeholder="Telefonní číslo (nepovinné)" style="margin-bottom: 20px;">
+                    <textarea name="Zpráva" placeholder="Popište stručně váš záměr..." required></textarea>
+                    
+                    <input type="hidden" name="_subject" value="Nová poptávka z webu F konstrukce">
+                    
                     <button type="submit" class="btn">Odeslat zprávu <i class="fa-solid fa-paper-plane"></i></button>
                 </form>
             </div>
